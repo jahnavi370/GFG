@@ -1,0 +1,7 @@
+class Solution:
+    def getTable(self,N):
+        # code here
+        l1=[]
+        for i in range(1,11):
+            l1.append(i*N)
+        return l1

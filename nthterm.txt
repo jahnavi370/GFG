@@ -1,0 +1,4 @@
+class Solution:
+    def findNthTerm(self, N):
+        # code here 
+        return int((N*(N+1))/2)

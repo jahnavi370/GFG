@@ -1,0 +1,21 @@
+class Solution {
+    static long isSumPalindrome(long n){
+        // code here
+        for(int i = 0; i <= 5; i++){
+        long reverseN = 0, rem = 0, originalN = n;
+            while(n > 0){
+                rem = n % 10;
+                reverseN = reverseN * 10 + rem;
+                n = n/10;
+            }
+
+           if(originalN == reverseN){
+                return reverseN;
+            }
+            
+            n = originalN + reverseN;
+        }
+         return -1; 
+
+    }
+}

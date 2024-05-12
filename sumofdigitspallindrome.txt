@@ -1,0 +1,17 @@
+class Solution:
+    def isDigitSumPalindrome(self, n):
+        #code here
+        s=str(n)
+        rev=rem=0
+        n1=0
+        for i in s:
+            n1+=int(i)
+        t=n1
+        while(n1):
+           rem=n1%10
+           n1=n1//10
+           rev=rev*10+rem
+        if t==rev:
+           return 1
+        else:
+           return 0

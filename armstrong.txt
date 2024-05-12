@@ -1,0 +1,14 @@
+import math
+class Solution:
+    def armstrongNumber (self, n):
+        # code here 
+        s=0
+        t=n
+        while(n!=0):
+           x=math.floor(n%10)
+           n=n//10
+           s=s+x*x*x
+        if t==s:
+            return "Yes"
+        else:
+            return "No"

@@ -1,0 +1,11 @@
+class Solution:
+	def streamAvg(self, arr, n):
+		# code here
+		l1=[]
+		c=1
+		ele=0
+		for i in arr:
+		    ele+=i
+		    l1.append(ele/c)
+		    c+=1
+		return l1

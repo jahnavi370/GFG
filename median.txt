@@ -1,0 +1,17 @@
+import math
+class Solution:
+	def find_median(self, v):
+		# Code here
+		v.sort()
+		l=len(v)
+		m=math.floor(l/2)
+		if l==1:
+		    return v[0]
+		elif l==2:
+		    return math.floor(sum(v)/2)
+		else:
+		    if l%2!=0:
+                                                return v[m]
+	    	   else:
+		      s=v[m-1]+v[m]
+		      return math.floor(s/2)

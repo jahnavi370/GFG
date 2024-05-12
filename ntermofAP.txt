@@ -1,0 +1,17 @@
+class Solution:
+    def nthTermOfAP(self, a1 : int, a2 : int, n : int) -> int:
+        # code here
+        r=a2-a1
+        a3=a2+r
+        if n==1:
+            return a1
+        elif n==2:
+            return a2
+        elif n==3:
+            return a3
+        else:
+            i=3
+            while(i!=n):
+               a3=a3+r
+               i+=1
+            return a3
